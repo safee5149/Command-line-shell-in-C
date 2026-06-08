@@ -117,3 +117,7 @@ Explore interprocess communication through Unix pipes.
 Practice file descriptor manipulation with dup2().
 Develop experience with dynamic memory management and command parsing.
 Build a simplified command-line shell that demonstrates core operating system concepts.
+
+## Demo
+
+![Shell Demo](Screenshot.png)
