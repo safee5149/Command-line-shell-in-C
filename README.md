@@ -1,6 +1,5 @@
 # Command-line-shell-in-C
 A Unix-style command shell written in C that supports process creation, command execution, background jobs, built-in commands, and interprocess communication through pipes. 
-Overview
 This project is a Linux shell written in C. It is an interactive command line shell which executes external programs using functions such as fork() and execvp(). This project also demonstrates operating system concepts such as waitpid-based synchronization, file descriptor redirection, and dynamic memory allocation.
 
 Features
