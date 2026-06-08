@@ -2,23 +2,23 @@
 A Unix-style command shell written in C that supports process creation, command execution, background jobs, built-in commands, and interprocess communication through pipes. 
 This project is a Linux shell written in C. It is an interactive command line shell which executes external programs using functions such as fork() and execvp(). This project also demonstrates operating system concepts such as waitpid-based synchronization, file descriptor redirection, and dynamic memory allocation.
 
-Features
-Core Shell Functionality
+Features:
+Core Shell Functionality:
 •	Interactive command-line shell implemented in C 
 •	Executes external programs using fork() and execvp() 
 •	Custom command prompt 
 •	Continuous command-processing loop until exit 
 
-Process Management
+Process Management:
 •	Creation of child processes using fork() 
 •	Foreground process execution 
 •	Parent-child process synchronization using waitpid() 
 •	Error handling for process creation failures 
 
-Background Execution
+Background Execution:
 Supports Unix-style background jobs using &
 
-Pipe Support
+Pipe Support:
 Supports single-stage Unix pipes using |
 Implemented using:
 •	pipe() 
@@ -36,7 +36,7 @@ exit:
 •	Shell termination
 •	Memory cleanup before exit
 
-Dynamic Memory Management
+Dynamic Memory Management:
 The shell dynamically allocates memory for:
 •	Command input buffers 
 •	Argument arrays 
@@ -46,7 +46,7 @@ Uses:
 •	realloc() 
 •	free()
 
-Command Parsing
+Command Parsing:
 •	Tokenization using strtok() 
 •	Parsing of command arguments 
 •	Detection of: 
@@ -54,7 +54,7 @@ o	pipes (|)
 o	background operators (&) 
 •	Construction of argument vectors for execvp()
 
-File Descriptor Manipulation
+File Descriptor Manipulation:
 Uses:
 pipe()
 dup2()
@@ -63,7 +63,7 @@ to redirect:
 •	stdout → pipe write end 
 •	stdin → pipe read end
 
-Error Handling
+Error Handling:
 Handles failures for:
 •	invalid commands 
 •	failed forks 
