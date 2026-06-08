@@ -301,7 +301,7 @@ if (pid==0){
 }
 else if (pid>0){
     if (ampersand != true){
-        waitpid(pid, NULL, 0); //parent process waits for child if ampersand is present.
+        waitpid(pid, NULL, 0); 
     }
 }
 else{
